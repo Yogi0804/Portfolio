@@ -1,0 +1,193 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root {
+    --header-height: 3rem;
+    --About-section-height: 20rem;
+
+    /*========== Colors ==========*/
+    /* Change favorite color */
+    --hue-color: 220; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --purple-color:250;
+    /* HSL color mode */
+    --first-color: hsl(var(--purple-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--purple-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--purple-color), 92%, 85%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: #fff;
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margenes Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 100;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+.main{
+     color: var(--title-color);
+}
+.navbar{
+    margin-bottom:5%;
+}
+.navbar-brand{
+    margin-left:10%;
+}
+.collapse{
+    margin-left:50%;
+}
+
+.move-1{
+    margin:5% 0 0 10%;
+}
+
+.icon{
+    width:10px;
+}
+.home__blob{
+    fill:var(--first-color);
+}
+.home__blob-img{
+    width:170px;
+    height:169px;
+    border-radius:.5rem;
+}
+.button{
+    display:inline-block;
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    background-color:var(--first-color);
+    text-decoration: none;
+}
+.button:hover{
+    background-color:var(--first-color-alt);
+    color:#fff;
+    text-decoration: none;
+}
+.button-primary{
+    display: inline-flex;
+}
+.contact-me{
+    width:140px;
+    height: var(--header-height);
+    font-size: var(--small-font-size);
+    text-align:center;
+}
+.center-me{
+    padding-top:15%;
+}
+.text-color{
+    color:white;
+    margin-top:50%;
+}
+.text-color:hover{
+    color:white;
+}
+.move-2{
+    margin-top:25%;
+}
+.--About-me{
+    margin-top:5%;
+    text-align:center;
+}
+.heading{
+    margin-top:10%;
+    text-align:center;
+}
+.--About-me-under{
+    text-align:center;
+    font-size:var( --smaller-font-size);
+}
+.--About-me-section{
+    font-size:var( --smaller-font-size);
+    width:var(--About-section-height);
+    text-align: justify;
+}
+.about_text{
+    margin-bottom: var(--mb-3);
+}
+.about_info{
+    font-size:var( --medium-font-size);
+}
+.skills_row{
+    text-align:center;
+}
+.skills_heading{
+    font-size:var(--h2-font-size);
+    color: var(--title-color);
+    text-decoration: none;
+}
+.skills_heading:hover{
+    cursor: pointer;
+}
+.skills_sets{
+    font-size:var(--h2-font-size);
+    color: var(--title-color);
+    margin-top:5%;
+}
+
+.skills_bar,
+.skills_bar_2{
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills_bar{
+    background-color: var(--first-color-lighter);
+    margin-left:45%;
+}
+.skills_bar_2{
+    display:block;
+    background-color: var(--first-color);
+}
+.skills_width{
+    width:90%;
+}
+.skills_number{
+    margin-left:95%;
+}
+
+.skills_title{
+    
+}
